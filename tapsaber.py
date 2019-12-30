@@ -20,9 +20,8 @@ def main():
 
     def tap(v):
         tnext = time.time()
-        value = False
-        white.value = value
-        value = not value
+        white.value = False
+        value = True
         time.sleep(0)
         for t in v:
             tnext += t / 1000

@@ -16,9 +16,8 @@ white.value = True
 
 def tap(v):
     tnext = time.time()
-    value = False
-    white.value = value
-    value = not value
+    white.value = False
+    value = True
     for t in v:
         tnext += t / 1000
         while time.time() < tnext:
